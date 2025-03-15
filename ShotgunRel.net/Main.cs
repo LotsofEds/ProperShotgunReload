@@ -298,7 +298,7 @@ namespace ShotgunRel
             }
             SpacePressed = false;
             GTA.Native.Function.Call("GET_CHAR_ANIM_CURRENT_TIME", Player.Character, "gun@shotgun", "reload", shotrel);
-            if (LastShot == false && ((shotrel <= 0.8 && shotrel > 0.1) || (Player.Character.Weapons.Current.Ammo - Player.Character.Weapons.Current.AmmoInClip) <= 0))
+            if (LastShot == false && (shotrel <= 0.8 && shotrel > 0.1))
             {
                 GTA.Native.Function.Call("SET_CHAR_ANIM_CURRENT_TIME", Player.Character, "gun@shotgun", "reload", 0.9);
                 GTA.Native.Function.Call("GET_CHAR_ANIM_CURRENT_TIME", Player.Character, "gun@shotgun", "reload", shotrel);
@@ -347,7 +347,7 @@ namespace ShotgunRel
             }
             SpacePressed = false;
             GTA.Native.Function.Call("GET_CHAR_ANIM_CURRENT_TIME", Player.Character, "gun@shotgun", "reload_crouch", shotrel);
-            if (LastShot == false && ((shotrel <= 0.8 && shotrel > 0.1) || (Player.Character.Weapons.Current.Ammo - Player.Character.Weapons.Current.AmmoInClip) <= 0))
+            if (LastShot == false && (shotrel <= 0.8 && shotrel > 0.1))
             {
                 GTA.Native.Function.Call("SET_CHAR_ANIM_CURRENT_TIME", Player.Character, "gun@shotgun", "reload_crouch", 0.9);
                 GTA.Native.Function.Call("GET_CHAR_ANIM_CURRENT_TIME", Player.Character, "gun@shotgun", "reload_crouch", shotrel);
@@ -396,7 +396,7 @@ namespace ShotgunRel
             }
             SpacePressed = false;
             GTA.Native.Function.Call("GET_CHAR_ANIM_CURRENT_TIME", Player.Character, "gun@baretta", "reload", shotrel);
-            if (LastShot == false && ((shotrel <= 0.8 && shotrel > 0.1) || (Player.Character.Weapons.Current.Ammo - Player.Character.Weapons.Current.AmmoInClip) <= 0))
+            if (LastShot == false && (shotrel <= 0.8 && shotrel > 0.1))
             {
                 GTA.Native.Function.Call("SET_CHAR_ANIM_CURRENT_TIME", Player.Character, "gun@baretta", "reload", 0.9);
                 GTA.Native.Function.Call("GET_CHAR_ANIM_CURRENT_TIME", Player.Character, "gun@baretta", "reload", shotrel);
@@ -445,7 +445,7 @@ namespace ShotgunRel
             }
             SpacePressed = false;
             GTA.Native.Function.Call("GET_CHAR_ANIM_CURRENT_TIME", Player.Character, "gun@baretta", "reload_crouch", shotrel);
-            if (LastShot == false && ((shotrel <= 0.8 && shotrel > 0.1) || (Player.Character.Weapons.Current.Ammo - Player.Character.Weapons.Current.AmmoInClip) <= 0))
+            if (LastShot == false && (shotrel <= 0.8 && shotrel > 0.1))
             {
                 GTA.Native.Function.Call("SET_CHAR_ANIM_CURRENT_TIME", Player.Character, "gun@baretta", "reload_crouch", 0.9);
                 GTA.Native.Function.Call("GET_CHAR_ANIM_CURRENT_TIME", Player.Character, "gun@baretta", "reload_crouch", shotrel);
